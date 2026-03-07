@@ -1,0 +1,4 @@
+interface:
+  display_name: "Gemini Delegate"
+  short_description: "Delegate scoped tasks to local Gemini CLI."
+  default_prompt: "Use $gemini-delegate to check Gemini quota and hand this small task to local Gemini CLI."
