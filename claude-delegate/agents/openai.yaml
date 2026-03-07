@@ -1,0 +1,4 @@
+interface:
+  display_name: "Claude Delegate"
+  short_description: "Delegate a scoped task to Claude CLI"
+  default_prompt: "Use $claude-delegate to run a scoped subtask through the local Claude CLI."
