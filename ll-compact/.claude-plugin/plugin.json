@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "ll-compact",
+  "version": "0.1.0",
+  "description": "Lossless compact: `/compact ll` dumps the transcript plus a Sonnet-written retrieval guide before compaction and re-injects the guide after",
+  "author": {
+    "name": "xhuang9",
+    "url": "https://github.com/xhuang9"
+  },
+  "skills": [
+    "./",
+    "./skills/ll-compact-clean"
+  ]
+}

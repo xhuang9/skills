@@ -1,0 +1,22 @@
+{
+  "type": "object",
+  "properties": {
+    "summary": {"type": "string"},
+    "toc": {"type": "array", "items": {"type": "object", "properties": {
+      "topic": {"type": "string"}, "turns": {"type": "string"},
+      "key": {"type": "array", "items": {"type": "integer"}}, "when": {"type": "string"}},
+      "required": ["topic", "turns", "key", "when"]}},
+    "decisions": {"type": "array", "items": {"type": "object", "properties": {
+      "t": {"type": "integer"}, "by": {"type": "string", "enum": ["user", "assistant"]}, "what": {"type": "string"}},
+      "required": ["t", "by", "what"]}},
+    "corrections": {"type": "array", "items": {"type": "object", "properties": {
+      "t": {"type": "integer"}, "what": {"type": "string"}}, "required": ["t", "what"]}},
+    "artifacts": {"type": "array", "items": {"type": "object", "properties": {
+      "t": {"type": "integer"}, "path": {"type": "string"}, "what": {"type": "string"}}, "required": ["t", "path", "what"]}},
+    "state": {"type": "array", "items": {"type": "object", "properties": {
+      "t": {"type": "integer"}, "what": {"type": "string"}}, "required": ["t", "what"]}},
+    "open": {"type": "array", "items": {"type": "object", "properties": {
+      "t": {"type": "integer"}, "what": {"type": "string"}}, "required": ["t", "what"]}}
+  },
+  "required": ["summary", "toc", "decisions", "artifacts", "open"]
+}

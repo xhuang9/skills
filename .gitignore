@@ -1,0 +1,4 @@
+# ll-compact session dumps: private transcripts, never commit
+ll-compact/projects/
+.DS_Store
+.omc/
